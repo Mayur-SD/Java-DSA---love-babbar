@@ -1,7 +1,7 @@
 import java.util.*;
 public class loops{
     
-    void main(){
+    public static void main(String[] args){
         // for(int i = 1; i < 4; i++){
         //     for(int j = 1; j < 6; j++){
         //         System.out.print("* " );
@@ -88,22 +88,73 @@ public class loops{
         //     System.out.println();
         // }
         
-        int n = 10;
+        // int n = 10;
 
-        for(int row = 1; row <= n; row++){
-            for(int col = 1; col <= row; col++){
-                if(row == 1 || row == 2|| row == n){
-                    System.out.print("*");
-                }else {
-                    if(col == 1 || col == row){
-                        System.out.print("*");
-                    }else{
-                        System.out.print(" ");
-                    }
+        // for(int row = 1; row <= n; row++){
+        //     for(int col = 1; col <= row; col++){
+        //         if(row == 1 || row == 2|| row == n){
+        //             System.out.print("*");
+        //         }else {
+        //             if(col == 1 || col == row){
+        //                 System.out.print("*");
+        //             }else{
+        //                 System.out.print(" ");
+        //             }
 
+        //         }
+        //     }
+        //     System.out.println();
+        // }
+
+    
+        int n = 4;
+
+        for(int i = 1; i <= n; i++){
+            //spaces
+            for(int j = 1; j<= n-i; j++){
+                System.out.print(" ");
+            }
+
+            //stars
+            if(i == 1){
+                System.out.print("*");
+            } else {
+                //stars
+                System.out.print("*");
+
+                //space
+                for(int j = 1; j <= 2*i-3; j++){
+                    System.out.print(" ");
                 }
+
+                //star
+                System.out.print("*");
             }
             System.out.println();
         }
+
+        int m = 3;
+
+        for(int i = 1; i <= m;i++){
+            //spaces
+            for(int j = 1; j <= i; j++){
+                System.out.print(" ");
+            }
+
+            //stars
+            if( i == m){
+                System.out.print("*");
+            } else {
+                System.out.print("*");
+
+            for(int j = 1; j <= 2*m-2*i-1; j++){
+                System.out.print(" ");
+            }
+
+            System.out.print("*");
+            }
+            System.out.println();
+        }
+        
     }
 }
