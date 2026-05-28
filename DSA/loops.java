@@ -107,54 +107,92 @@ public class loops{
         // }
 
     
+        // int n = 4;
+
+        // for(int i = 1; i <= n; i++){
+        //     //spaces
+        //     for(int j = 1; j<= n-i; j++){
+        //         System.out.print(" ");
+        //     }
+
+        //     //stars
+        //     if(i == 1){
+        //         System.out.print("*");
+        //     } else {
+        //         //stars
+        //         System.out.print("*");
+
+        //         //space
+        //         for(int j = 1; j <= 2*i-3; j++){
+        //             System.out.print(" ");
+        //         }
+
+        //         //star
+        //         System.out.print("*");
+        //     }
+        //     System.out.println();
+        // }
+
+        // int m = 3;
+
+        // for(int i = 1; i <= m;i++){
+        //     //spaces
+        //     for(int j = 1; j <= i; j++){
+        //         System.out.print(" ");
+        //     }
+
+        //     //stars
+        //     if( i == m){
+        //         System.out.print("*");
+        //     } else {
+        //         System.out.print("*");
+
+        //     for(int j = 1; j <= 2*m-2*i-1; j++){
+        //         System.out.print(" ");
+        //     }
+
+        //     System.out.print("*");
+        //     }
+        //     System.out.println();
+        // }
+    
         int n = 4;
+        
+        for(int i = 1; i <= n; i++){
+            //stars
+            for(int j = 1; j <= i;j++){
+                System.out.print("*");
+            }
+
+            //spaces
+            for(int j = 1; j <= 2*(n-i); j++){
+                System.out.print(" ");
+            }
+
+            for(int j = 1; j <= i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+            
+        }
+        
 
         for(int i = 1; i <= n; i++){
-            //spaces
-            for(int j = 1; j<= n-i; j++){
+            //star
+            for(int j = 1; j <= n-i+1; j++){
+                System.out.print("*");
+            }
+            //space
+            for(int j = 1; j <= 2*i-2; j++){
                 System.out.print(" ");
             }
-
-            //stars
-            if(i == 1){
-                System.out.print("*");
-            } else {
-                //stars
-                System.out.print("*");
-
-                //space
-                for(int j = 1; j <= 2*i-3; j++){
-                    System.out.print(" ");
-                }
-
-                //star
+            //star
+            for(int j = 1; j <= n-i+1; j++){
                 System.out.print("*");
             }
             System.out.println();
         }
-
-        int m = 3;
-
-        for(int i = 1; i <= m;i++){
-            //spaces
-            for(int j = 1; j <= i; j++){
-                System.out.print(" ");
-            }
-
-            //stars
-            if( i == m){
-                System.out.print("*");
-            } else {
-                System.out.print("*");
-
-            for(int j = 1; j <= 2*m-2*i-1; j++){
-                System.out.print(" ");
-            }
-
-            System.out.print("*");
-            }
-            System.out.println();
-        }
+        
         
     }
 }
