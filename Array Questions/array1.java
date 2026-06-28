@@ -95,7 +95,15 @@ public class array1 {
         }
     }
 
-    
+    public static void itrSecArr(int arr[],int err[]){
+        for(int i = 0; i < arr.length; i++){
+            for(int j = 0; j < err.length; j++){
+                if(arr[i] == err[j]){
+                    System.out.println(arr[i]);
+                }
+            }
+        }
+    }
 
 
 
