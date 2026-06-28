@@ -76,14 +76,54 @@ public class array1 {
         System.out.println("Count of 1 in this array is " + count1);
     }
 
+    //find first unsorted array
+    public static int findUnsortedEle(int drr[]){
+        for(int i = 0; i < drr.length; i++){
+            if(drr[i] >= drr[i+1]){
+            return drr[i+1];
+            }
+        }
+        return -1;
+    }
+
+    //Homework Questions
+    public static void swapAltNo(int arr[]){
+        for(int i = 0; i < arr.length - 1; i+=2){
+            int a = arr[i];
+            arr[i] = arr[i+1];
+            arr[i + 1] = a;
+        }
+    }
+
+    public static void itrSecArr(int arr[],int err[]){
+        for(int i = 0; i < arr.length; i++){
+            for(int j = 0; j < err.length; j++){
+                if(arr[i] == err[j]){
+                    System.out.println(arr[i]);
+                }
+            }
+        }
+    }
+
+
+
     public static void main(String[] args){
         int arr[] = {1,2,3,4,5,6};
+        // swapAltNo(arr);   // Call the method
+
+        // Print the array
+        // for (int i = 0; i < arr.length; i++) {
+        //     System.out.print(arr[i] + " ");
+        // }
         
 
         int brr[] = {2,-4,6,-8,5,3,-1};
         
         int crr[] = {1,0,2,4,1,0,3,0,1,5,29,0,4,1};
-        count1or0(crr);
         
+        int drr[] = {1,2,3,4,5,2,8,9,10};
+
+        int err[] = {9,7,8,4,2,0};
+       
     }
 }
